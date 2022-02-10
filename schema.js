@@ -25,18 +25,18 @@ const userScheme = new Schema({
         type: Boolean,
         required: true
     },
-    accessToken: {
-        type: String,
-        required: true
-    },
-    storeHash: {
-        type: String,
-        required: true
-    },
-    clientID: {
-        type: String,
-        required: true
-    }
+    // accessToken: {
+    //     type: String,
+    //     required: true
+    // },
+    // storeHash: {
+    //     type: String,
+    //     required: true
+    // },
+    // clientID: {
+    //     type: String,
+    //     required: true
+    // }
 })
 
 module.exports = model('User', userScheme)
