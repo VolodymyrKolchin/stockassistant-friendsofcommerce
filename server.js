@@ -33,11 +33,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json({limit: '50mb'}));
 
 app.get('/', (req, res) => {
-    res.send("Express heroku app");
+    res.status(200).send("Express heroku app");
 });
 
 app.post( "/send", cors(), async ( req, res ) => {
-    res.send( "Hello Email! /send(POST)" );
     const data = req.body.dataSCV;
     const writerExport = csvWriter({});
     writerExport.pipe(fs.createWriteStream('file.csv'));
@@ -62,10 +61,10 @@ app.post( "/send", cors(), async ( req, res ) => {
        ]
    });
    logger.info(`Send mail: ${info.response}`);
+   res.status(201).send("File created and uploaded successfully ");
 });
 
 app.post('/subscribe',async (req, res) => {
-    res.send("Hello World! Subscribe!!!");
     await User.find({email: req.body.form.email})
     .then((data)=>{
         if(data.length === 0) {
@@ -82,26 +81,32 @@ app.post('/subscribe',async (req, res) => {
             },
             function(err, doc){
                 if(err) {
+                    res.status(400).send("Error created user");
                     return logger.info(`Error(Created user): ${err}`);
                 }
                 logger.info(`Created user: ${doc.email}`);
+                res.status(201).send("User created");
             });
         } else {
             if(req.body.form.unsubscribe === true) {
                 User.deleteMany({ email: req.body.form.email })
                     .then((res) => {
                         logger.info(`Delete user: ${req.body.form.email}`);
+                        res.status(200).send("User deleted");
                     })
                     .catch((err) => {
                         logger.info(`Error(Delete user): ${err}`);
+                        res.status(400).send("Error delete user");
                     })
             } else {
                 User.updateOne({ email: req.body.form.email }, { $set: req.body.form } )
                     .then((res) => {
                         logger.info(`Update user: ${req.body.form.email}`);
+                        res.status(204).send("User updated");
                     })
                     .catch((err) => {
                         logger.info(`Error(update users): ${err}`);
+                        res.status(400).send("Error update user");
                     })
             }
         }
