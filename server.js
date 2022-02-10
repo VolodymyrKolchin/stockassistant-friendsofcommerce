@@ -37,14 +37,14 @@ app.get('/', (req, res) => {
 });
 
 app.post( "/send", cors(), async ( req, res ) => {
-    // const data = req.body.dataSCV;
-    // const writerExport = csvWriter({});
-    // writerExport.pipe(fs.createWriteStream('file.csv'));
-    // data.map((el)=>{
-    //     writerExport.write(el);
-    // })
-    // writerExport.end();
-    // logger.info(`Created file BigCommerce-import-products.csv`);
+    const data = req.body.dataSCV;
+    const writerExport = csvWriter({});
+    writerExport.pipe(fs.createWriteStream('file.csv'));
+    data.map((el)=>{
+        writerExport.write(el);
+    })
+    writerExport.end();
+    logger.info(`Created file BigCommerce-import-products.csv`);
 
     // send mail with defined transport object
    const info = await transporter.sendMail({
