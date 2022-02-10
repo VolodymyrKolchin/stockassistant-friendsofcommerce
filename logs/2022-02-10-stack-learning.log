@@ -1,0 +1,11 @@
+2022-02-10T15:25:29+02:00 - info: Server started at
+2022-02-10T15:25:29+02:00 - info: Mongoose connect
+2022-02-10T15:25:29+02:00 - info: Error(Created user): ValidationError: accessToken: Path `accessToken` is required., storeHash: Path `storeHash` is required.
+2022-02-10T17:09:56+02:00 - info: Server started at
+2022-02-10T17:09:56+02:00 - info: Mongoose connect
+2022-02-10T17:10:17+02:00 - info: Server started at
+2022-02-10T17:10:17+02:00 - info: Mongoose connect
+2022-02-10T17:11:32+02:00 - info: Server started at
+2022-02-10T17:11:32+02:00 - info: Mongoose connect
+2022-02-10T17:12:04+02:00 - info: Server started at
+2022-02-10T17:12:04+02:00 - info: Mongoose connect

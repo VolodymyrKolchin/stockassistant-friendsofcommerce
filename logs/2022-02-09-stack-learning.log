@@ -1,0 +1,103 @@
+2022-02-09T10:36:36+02:00 - info: Server started at
+2022-02-09T10:36:36+02:00 - info: Mongoose connect
+2022-02-09T10:36:36+02:00 - info: Created user: kolchinvolodum@gmail.com
+2022-02-09T10:36:36+02:00 - info: Error(Created user): ValidationError: email: Path `email` is required., accessToken: Path `accessToken` is required., storeHash: Path `storeHash` is required., clientID: Path `clientID` is required.
+2022-02-09T10:36:36+02:00 - info: Created user: KolchinVolodyyr@i.ua
+2022-02-09T10:36:36+02:00 - info: Update user: KolchinVolodyyr@i.ua
+2022-02-09T10:36:36+02:00 - info: Delete user: KolchinVolo29@gmail.com
+2022-02-09T10:36:36+02:00 - info: Update user: KolchinVolo29@gmail.com
+2022-02-09T10:36:36+02:00 - info: Delete user: KolchinVolo29@gmail.com
+2022-02-09T10:36:36+02:00 - info: Error(Created user): ValidationError: accessToken: Path `accessToken` is required., storeHash: Path `storeHash` is required.
+2022-02-09T10:36:36+02:00 - info: Delete user: KolchinVolo299@gmail.com
+2022-02-09T11:28:58+02:00 - info: Server started at
+2022-02-09T11:28:58+02:00 - info: Mongoose connect
+2022-02-09T11:28:58+02:00 - info: Delete user: KolchinVolo299@gmail.com
+2022-02-09T11:29:24+02:00 - info: Server started at
+2022-02-09T11:29:24+02:00 - info: Mongoose connect
+2022-02-09T11:29:24+02:00 - info: Delete user: KolchinVolo299@gmail.com
+2022-02-09T11:29:24+02:00 - info: Update user: KolchinVolo299@gmail.com
+2022-02-09T11:31:00+02:00 - info: Server started at
+2022-02-09T11:31:00+02:00 - info: Mongoose connect
+2022-02-09T11:31:00+02:00 - info: Update user: KolchinVolo299@gmail.com
+2022-02-09T11:31:00+02:00 - info: Update user: KolchinVolo299@gmail.com
+2022-02-09T11:31:00+02:00 - info: Delete user: KolchinVolo299@gmail.com
+2022-02-09T11:31:00+02:00 - info: Update user: KolchinVolo299@gmail.com
+2022-02-09T11:35:24+02:00 - info: Server started at
+2022-02-09T11:35:24+02:00 - info: Mongoose connect
+2022-02-09T11:35:24+02:00 - info: Update user: KolchinVolo299@gmail.com
+2022-02-09T11:35:24+02:00 - info: Delete user: KolchinVolo299@gmail.com
+2022-02-09T11:37:07+02:00 - info: Server started at
+2022-02-09T11:37:07+02:00 - info: Mongoose connect
+2022-02-09T11:37:07+02:00 - info: Update user: KolchinVolo299@gmail.com
+2022-02-09T11:37:07+02:00 - info: Update user: KolchinVolo299@gmail.com
+2022-02-09T11:37:07+02:00 - info: Delete user: KolchinVolo299@gmail.com
+2022-02-09T11:49:09+02:00 - info: Server started at
+2022-02-09T11:49:09+02:00 - info: Mongoose connect
+2022-02-09T11:49:09+02:00 - info: Cron (job daily)
+2022-02-09T11:49:09+02:00 - info: Cron (job daily)
+2022-02-09T11:49:09+02:00 - info: Cron (job daily)
+2022-02-09T11:51:27+02:00 - info: Server started at
+2022-02-09T11:51:27+02:00 - info: Mongoose connect
+2022-02-09T11:51:27+02:00 - info: Cron (job daily)
+2022-02-09T11:51:27+02:00 - info: Cron (job daily)
+2022-02-09T11:51:27+02:00 - info: Cron (job daily)
+2022-02-09T11:51:27+02:00 - info: Cron (job daily)
+2022-02-09T11:53:39+02:00 - info: Server started at
+2022-02-09T11:53:39+02:00 - info: Mongoose connect
+2022-02-09T11:54:22+02:00 - info: Server started at
+2022-02-09T11:54:22+02:00 - info: Mongoose connect
+2022-02-09T11:59:05+02:00 - info: Server started at
+2022-02-09T11:59:05+02:00 - info: Mongoose connect
+2022-02-09T11:59:19+02:00 - info: Server started at
+2022-02-09T11:59:19+02:00 - info: Mongoose connect
+2022-02-09T12:00:19+02:00 - info: Server started at
+2022-02-09T12:00:19+02:00 - info: Mongoose connect
+2022-02-09T12:09:07+02:00 - info: Server started at
+2022-02-09T12:09:07+02:00 - info: Mongoose connect
+2022-02-09T12:20:58+02:00 - info: Server started at
+2022-02-09T12:20:58+02:00 - info: Mongoose connect
+2022-02-09T12:20:58+02:00 - info: Cron (job daily)
+2022-02-09T12:20:58+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T12:20:58+02:00 - info: Send mail: 250 OK b2142d1b-b55d-00ab-e01b-7e3613f56bed
+2022-02-09T12:26:27+02:00 - info: Server started at
+2022-02-09T12:26:27+02:00 - info: Mongoose connect
+2022-02-09T12:26:27+02:00 - info: Cron (job daily)
+2022-02-09T12:26:27+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T12:26:27+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T12:26:27+02:00 - info: Send mail: 250 OK b2142d7e-da5e-0087-e07e-e35376900dd7
+2022-02-09T12:26:27+02:00 - info: Send mail: 250 OK b2142d02-da5e-408a-e002-aa2f0aec7119
+2022-02-09T12:35:07+02:00 - info: Server started at
+2022-02-09T12:35:07+02:00 - info: Mongoose connect
+2022-02-09T12:36:17+02:00 - info: Server started at
+2022-02-09T12:36:17+02:00 - info: Mongoose connect
+2022-02-09T12:36:17+02:00 - info: Cron (job daily)
+2022-02-09T12:36:17+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T12:36:17+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T12:36:17+02:00 - info: Send mail: 250 OK b2142d48-2461-007f-8048-926540a604e8
+2022-02-09T12:36:17+02:00 - info: Send mail: 250 OK b2142d6a-2461-008f-a06a-e447628426b2
+2022-02-09T15:22:40+02:00 - info: Server started at
+2022-02-09T15:22:40+02:00 - info: Mongoose connect
+2022-02-09T15:31:30+02:00 - info: Server started at
+2022-02-09T15:31:30+02:00 - info: Mongoose connect
+2022-02-09T15:31:30+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T15:31:30+02:00 - info: Send mail: 250 OK b2142d1c-6f88-404b-601c-c43114f2b9c1
+2022-02-09T15:59:24+02:00 - info: Server started at
+2022-02-09T15:59:24+02:00 - info: Mongoose connect
+2022-02-09T17:00:34+02:00 - info: Server started at
+2022-02-09T17:00:34+02:00 - info: Mongoose connect
+2022-02-09T17:00:34+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T17:00:34+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T17:00:34+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T17:00:34+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T17:00:34+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T17:00:34+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T17:00:34+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T17:00:34+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T17:00:34+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T17:00:34+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T17:00:34+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T17:00:34+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T17:00:34+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T17:00:34+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T17:00:34+02:00 - info: Created file BigCommerce-import-products.csv
+2022-02-09T17:00:34+02:00 - info: Created file BigCommerce-import-products.csv
