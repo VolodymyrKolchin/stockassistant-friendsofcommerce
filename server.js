@@ -119,6 +119,7 @@ app.listen(process.env.PORT || 8080, () => {
     logger.info('Server started at');
     jobDaily();
     workingDay();
+
     // weekly();
     // monthly();
 });
