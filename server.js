@@ -65,7 +65,7 @@ app.post( "/send", cors(), async ( req, res ) => {
    res.status(201).send("File created and uploaded successfully ");
 });
 
-app.post('/subscribe',async (req, res) => {
+app.post('/subscribe', cors(),async (req, res) => {
     console.log('req.body', req.body);
     await User.find({email: req.body.form.email})
     .then((data)=>{
