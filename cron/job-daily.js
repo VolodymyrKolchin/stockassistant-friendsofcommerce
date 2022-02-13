@@ -8,9 +8,9 @@ const fs = require("fs");
 const User = require("../schema");
 const transporter = require("../lib/nodemailer");
 
-module.exports = async function jobDaily () {
+module.exports = function jobDaily () {
         console.log('User');
-        await User.find()
+        User.find()
             .then((response)=>{
                 response.forEach(async (el)=>{
                     const job = new CronJob(el.cronTime, async function() {
