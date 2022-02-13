@@ -5,24 +5,32 @@ const userScheme = new Schema({
         type: String,
         required: true
     },
-    daily: {
-        type: Boolean,
-        required: true
-    },
-    workingDay: {
-        type: Boolean,
-        required: true
-    },
-    weekly: {
-        type: Boolean,
-        required: true
-    },
-    monthly: {
-        type: Boolean,
-        required: true
-    },
+    // daily: {
+    //     type: Boolean,
+    //     required: true
+    // },
+    // workingDay: {
+    //     type: Boolean,
+    //     required: true
+    // },
+    // weekly: {
+    //     type: Boolean,
+    //     required: true
+    // },
+    // monthly: {
+    //     type: Boolean,
+    //     required: true
+    // },
     unsubscribe: {
         type: Boolean,
+        required: true
+    },
+    cronTime: {
+        type: String,
+        required: true
+    },
+    timeZone: {
+        type: String,
         required: true
     },
     accessToken: {
