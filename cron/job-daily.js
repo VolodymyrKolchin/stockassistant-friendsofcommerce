@@ -14,7 +14,8 @@ module.exports = function jobDaily () {
             .then((response)=>{
                 response.map((el)=>{
                     console.log('el.cronTime', el);
-                    const job = new CronJob(el.cronTime, async function() {
+                    console.log('el.cronTime', el.cronTime.toString());
+                    const job = new CronJob(el.cronTime.toString(), async function() {
                         console.log('CronJob: email', el.email);
                         new BigCommerce({
                             clientId: el.clientID,
