@@ -12,7 +12,7 @@ module.exports = function jobDaily () {
         console.log('User');
         User.find()
             .then((response)=>{
-                response.forEach(async (el)=>{
+                response.map((el)=>{
                     const job = new CronJob(el.cronTime, async function() {
                         console.log('CronJob: email', el.email);
                         new BigCommerce({
