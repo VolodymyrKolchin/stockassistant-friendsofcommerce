@@ -66,18 +66,14 @@ app.post( "/send", cors(), async ( req, res ) => {
 });
 
 app.post('/subscribe', cors(),async (req, res) => {
-    console.log('req.body', req.body);
-    await User.find({email: req.body.form.email})
+
+await User.find({email: req.body.form.email})
     .then((data)=>{
         if(data.length === 0) {
             User.create({
                 email: req.body.form.email,
                 cronTime: req.body.cronTime,
                 timeZone: req.body.timeZone,
-                // daily: req.body.form.daily,
-                // weekly: req.body.form.weekly,
-                // workingDay: req.body.form.workingDay,
-                // monthly: req.body.form.monthly,
                 accessToken: req.body.accessToken,
                 storeHash: req.body.storeHash,
                 clientID: req.body.clientID,
@@ -142,7 +138,8 @@ app.post('/subscribe', cors(),async (req, res) => {
                         res.status(400).send("Error delete user");
                     })
             } else {
-                User.updateOne({ email: req.body.form.email }, { $set: req.body.form } )
+                console.log('updateOne: req.body.form.email', req.body.form.email)
+                User.updateOne({ email: req.body.form.email }, { $set: req.body } )
                     .then((res) => {
                         logger.info(`Update user: ${req.body.form.email}`);
                         res.status(204).send("User updated");
