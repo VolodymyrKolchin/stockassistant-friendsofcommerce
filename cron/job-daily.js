@@ -37,11 +37,11 @@ User.find()
                     logger.info(`Created file BigCommerce-import-products.csv`);
                     // send mail with defined transport object
                     const info = await transporter.sendMail({
-                        from: 'StockAssistant@friendsofcommerce.com',
+                        from: 'Stock Assistant Inventory Report <StockAssistant@friendsofcommerce.com>',
                         to: el.email,
-                        subject: "BigCommerce import products (daily)",
+                        subject: "Stock Assistant - BigCommerce Inventory Report",
                         text: "You can download the file.csv attached below.",
-                        html: "<strong>Daily distribution of the product catalog (inventory) in BigCommerce. You can download the file attached below </strong>",
+                        html: "<strong>As requested, find attached here is your Inventory Report! </strong>",
                         headers: { 'x-myheader': 'test header' },
                         attachments: [
                             {
