@@ -51,12 +51,18 @@ app.post( "/send", cors(), async ( req, res ) => {
    const info = await transporter.sendMail({
        from: 'Stock Assistant Inventory Report <StockAssistant@friendsofcommerce.com>',
        to: req.body.formEmail.email,
-       subject: " Stock Assistant - BigCommerce Inventory Report",
+       subject: "Stock Assistant - BigCommerce Inventory Report",
        text: "You can download the file.csv attached below.",
        html: `<h3>Hello Friend</h3>
        <p>As requested, find attached here is your Inventory Report!</p>
        <p>Thank you for using Stock Assistant by Friends of Commerce!</p>
-       <p>You can download the file.csv attached below.</p>`,
+       <p>You can download the file.csv attached below.</p>
+       <p>Signature: </p>
+       <p>Your eCommerce friend, Stock Assistant by Friends of Commerce</p>
+       <a href='https://friendsofcommerce.com/'>Home</a>
+       <a href='https://www.linkedin.com/company/friendsofcommerce'>Linkedin</a>
+       <a href='https://twitter.com/CommerceFriends'>Twitter</a>
+       <a href="mailto:info@friendsofcommerce.com">Email Us</a>`,
        headers: { 'x-myheader': 'test header' },
        attachments: [
            {
