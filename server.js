@@ -120,7 +120,16 @@ await User.find({email: req.body.form.email})
                                 to: req.body.form.email,
                                 subject: "Stock Assistant - BigCommerce Inventory Report",
                                 text: "You can download the file.csv attached below.",
-                                html: "<strong>As requested, find attached here is your Inventory Report! </strong>",
+                                html: `<h3>Hello Friend</h3>
+                                       <p>As requested, find attached here is your Inventory Report!</p>
+                                       <p>Thank you for using Stock Assistant by Friends of Commerce!</p>
+                                       <p>You can download the file.csv attached below.</p>
+                                       <p>Signature: </p>
+                                       <p>Your eCommerce friend, Stock Assistant by Friends of Commerce</p>
+                                       <a href='https://friendsofcommerce.com/'>Home</a>
+                                       <a href='https://www.linkedin.com/company/friendsofcommerce'>Linkedin</a>
+                                       <a href='https://twitter.com/CommerceFriends'>Twitter</a>
+                                       <a href="mailto:info@friendsofcommerce.com">Email Us</a>`,
                                 headers: { 'x-myheader': 'test header' },
                                 attachments: [
                                     {
