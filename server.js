@@ -49,11 +49,14 @@ app.post( "/send", cors(), async ( req, res ) => {
 
     // send mail with defined transport object
    const info = await transporter.sendMail({
-       from: 'StockAssistant@friendsofcommerce.com',
+       from: 'Stock Assistant Inventory Report <StockAssistant@friendsofcommerce.com>',
        to: req.body.formEmail.email,
-       subject: "BigCommerce import products",
+       subject: " Stock Assistant - BigCommerce Inventory Report",
        text: "You can download the file.csv attached below.",
-       html: "<strong>You can download the file.csv attached below.</strong>",
+       html: `<h3>Hello Friend</h3>
+       <p>As requested, find attached here is your Inventory Report!</p>
+       <p>Thank you for using Stock Assistant by Friends of Commerce!</p>
+       <p>You can download the file.csv attached below.</p>`,
        headers: { 'x-myheader': 'test header' },
        attachments: [
            {
