@@ -34,7 +34,19 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json({limit: '50mb'}));
 
 app.get('/', (req, res) => {
-    res.status(200).send("Express heroku app");
+    res.status(200).send(JSON.stringify({message: "Express heroku app"}));
+});
+
+app.post('/email-list', (req, res) => {
+    const data = [];
+    User.find({storeHash: req.body.storeHash})
+        .then((response)=>{
+            data.push(response);
+        })
+        .then(()=>{
+            console.log('data', data)
+            res.status(200).send(JSON.stringify({message: data}));
+        })
 });
 
 app.post( "/send", cors(), async ( req, res ) => {
