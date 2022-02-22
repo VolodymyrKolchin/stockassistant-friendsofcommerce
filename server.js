@@ -186,6 +186,11 @@ await User.find({email: req.body.form.email})
     })
 });
 
+app.delete('/delete/:ID', cors(),async (req, res) => {
+    console.log('delete');
+    console.log('req.params', req.params)
+})
+
 // start the Express server
 app.listen(process.env.PORT || 8080, () => {
     console.log('Server started at');
