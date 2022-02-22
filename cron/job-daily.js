@@ -50,7 +50,8 @@ User.find()
                                <a href='https://friendsofcommerce.com/'>Home</a>
                                <a href='https://www.linkedin.com/company/friendsofcommerce'>Linkedin</a>
                                <a href='https://twitter.com/CommerceFriends'>Twitter</a>
-                               <a href="mailto:info@friendsofcommerce.com">Email Us</a>`,
+                               <a href="mailto:info@friendsofcommerce.com">Email Us</a>
+                               <p><img src="https://stock-assistant-friendsofcomme.herokuapp.com/logo-FOC.jpeg"></p>`,
                         headers: { 'x-myheader': 'test header' },
                         attachments: [
                             {
