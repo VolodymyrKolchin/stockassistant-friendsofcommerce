@@ -187,8 +187,15 @@ await User.find({email: req.body.form.email})
 });
 
 app.delete('/delete/:ID', cors(),async (req, res) => {
-    console.log('delete');
-    console.log('req.params', req.params)
+    User.deleteMany({ _id: req.params.ID })
+        .then((res) => {
+            logger.info(`Delete user: ID ${req.params.ID}`);
+            res.status(200).send("User deleted");
+        })
+        .catch((err) => {
+            logger.info(`Error(Delete user): ${err}`);
+            res.status(400).send("Error delete user");
+        })
 })
 
 // start the Express server
