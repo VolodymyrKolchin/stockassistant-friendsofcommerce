@@ -45,7 +45,7 @@ User.find()
                                <p>As requested, find attached here is your Inventory Report!</p>
                                <p>Thank you for using Stock Assistant by Friends of Commerce!</p>
                                <p>You can download the file.csv attached below.</p>
-                               <p>Signature: </p>
+                               <p> </p>
                                <p>Your eCommerce friend, Stock Assistant by Friends of Commerce</p>
                                <a href='https://friendsofcommerce.com/'>Home</a>
                                <a href='https://www.linkedin.com/company/friendsofcommerce'>Linkedin</a>

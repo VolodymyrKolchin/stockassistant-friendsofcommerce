@@ -32,6 +32,7 @@ connectToMongo();
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json({limit: '50mb'}));
+app.use(express.static('public'))
 
 app.get('/', (req, res) => {
     res.status(200).send(JSON.stringify({message: "Express heroku app"}));
@@ -69,12 +70,13 @@ app.post( "/send", cors(), async ( req, res ) => {
        <p>As requested, find attached here is your Inventory Report!</p>
        <p>Thank you for using Stock Assistant by Friends of Commerce!</p>
        <p>You can download the file.csv attached below.</p>
-       <p>Signature: </p>
+       <p> </p>
        <p>Your eCommerce friend, Stock Assistant by Friends of Commerce</p>
        <a href='https://friendsofcommerce.com/'>Home</a>
        <a href='https://www.linkedin.com/company/friendsofcommerce'>Linkedin</a>
        <a href='https://twitter.com/CommerceFriends'>Twitter</a>
-       <a href="mailto:info@friendsofcommerce.com">Email Us</a>`,
+       <a href="mailto:info@friendsofcommerce.com">Email Us</a>
+       <img src="https://stock-assistant-friendsofcomme.herokuapp.com/logo-FOC.jpeg">`,
        headers: { 'x-myheader': 'test header' },
        attachments: [
            {
@@ -136,7 +138,7 @@ await User.find({email: req.body.form.email})
                                        <p>As requested, find attached here is your Inventory Report!</p>
                                        <p>Thank you for using Stock Assistant by Friends of Commerce!</p>
                                        <p>You can download the file.csv attached below.</p>
-                                       <p>Signature: </p>
+                                       <p> </p>
                                        <p>Your eCommerce friend, Stock Assistant by Friends of Commerce</p>
                                        <a href='https://friendsofcommerce.com/'>Home</a>
                                        <a href='https://www.linkedin.com/company/friendsofcommerce'>Linkedin</a>
