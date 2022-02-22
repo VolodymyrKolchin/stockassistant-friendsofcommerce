@@ -76,7 +76,7 @@ app.post( "/send", cors(), async ( req, res ) => {
        <a href='https://www.linkedin.com/company/friendsofcommerce'>Linkedin</a>
        <a href='https://twitter.com/CommerceFriends'>Twitter</a>
        <a href="mailto:info@friendsofcommerce.com">Email Us</a>
-       <img src="https://stock-assistant-friendsofcomme.herokuapp.com/logo-FOC.jpeg">`,
+       <p><img src="https://stock-assistant-friendsofcomme.herokuapp.com/logo-FOC.jpeg"></p>`,
        headers: { 'x-myheader': 'test header' },
        attachments: [
            {
