@@ -67,11 +67,9 @@ app.post( "/send", cors(), async ( req, res ) => {
        subject: "Stock Assistant - BigCommerce Inventory Report",
        text: "You can download the file.csv attached below.",
        html: `<h3>Hello Friend</h3>
-       <p>As requested, find attached here is your Inventory Report!</p>
-       <p>Thank you for using Stock Assistant by Friends of Commerce!</p>
-       <p>You can download the file.csv attached below.</p>
+       <p>As requested, find attached your Inventory Report.</p>
        <p> </p>
-       <p>Your eCommerce friend, Stock Assistant by Friends of Commerce</p>
+       <p>Stock Assistant by Friends of Commerce</p>
        <a href='https://friendsofcommerce.com/'>Home</a>
        <a href='https://www.linkedin.com/company/friendsofcommerce'>Linkedin</a>
        <a href='https://twitter.com/CommerceFriends'>Twitter</a>
@@ -190,12 +188,8 @@ app.delete('/delete/:ID', cors(),async (req, res) => {
     User.deleteMany({ _id: req.params.ID })
         .then((res) => {
             logger.info(`Delete user: ID ${req.params.ID}`);
-            res.status(200).send("User deleted");
         })
-        .catch((err) => {
-            logger.info(`Error(Delete user): ${err}`);
-            res.status(400).send("Error delete user");
-        })
+        res.status(200).send("User deleted");
 })
 
 // start the Express server
