@@ -158,28 +158,16 @@ await User.find({email: req.body.form.email})
                 res.status(201).send("User created");
             });
         } else {
-            if(req.body.form.unsubscribe === true) {
-                User.deleteMany({ email: req.body.form.email })
-                    .then((res) => {
-                        logger.info(`Delete user: ${req.body.form.email}`);
-                        res.status(200).send("User deleted");
-                    })
-                    .catch((err) => {
-                        logger.info(`Error(Delete user): ${err}`);
-                        res.status(400).send("Error delete user");
-                    })
-            } else {
-                console.log('updateOne: req.body.form.email', req.body.form.email)
-                User.updateOne({ email: req.body.form.email }, { $set: req.body } )
-                    .then((res) => {
-                        logger.info(`Update user: ${req.body.form.email}`);
-                        res.status(204).send("User updated");
-                    })
-                    .catch((err) => {
-                        logger.info(`Error(update users): ${err}`);
-                        res.status(400).send("Error update user");
-                    })
-            }
+            console.log('updateOne: req.body.form.email', req.body.form.email)
+            User.updateOne({ email: req.body.form.email }, { $set: req.body } )
+                .then((res) => {
+                    logger.info(`Update user: ${req.body.form.email}`);
+                    res.status(204).send("User updated");
+                })
+                .catch((err) => {
+                    logger.info(`Error(update users): ${err}`);
+                    res.status(400).send("Error update user");
+                })
         }
     })
 });
