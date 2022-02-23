@@ -42,11 +42,9 @@ User.find()
                         subject: "Stock Assistant - BigCommerce Inventory Report",
                         text: "You can download the file.csv attached below.",
                         html: `<h3>Hello Friend</h3>
-                               <p>As requested, find attached here is your Inventory Report!</p>
-                               <p>Thank you for using Stock Assistant by Friends of Commerce!</p>
-                               <p>You can download the file.csv attached below.</p>
+                               <p>As requested, find attached your Inventory Report.</p>
                                <p> </p>
-                               <p>Your eCommerce friend, Stock Assistant by Friends of Commerce</p>
+                               <p>Stock Assistant by Friends of Commerce</p>
                                <a href='https://friendsofcommerce.com/'>Home</a>
                                <a href='https://www.linkedin.com/company/friendsofcommerce'>Linkedin</a>
                                <a href='https://twitter.com/CommerceFriends'>Twitter</a>
