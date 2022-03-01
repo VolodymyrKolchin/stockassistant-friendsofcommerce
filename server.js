@@ -87,6 +87,7 @@ app.post('/subscribe', cors(),async (req, res) => {
 
 await User.find({email: req.body.form.email})
     .then((data)=>{
+        console.log('req.body', req.body);
         if(data.length === 0) {
             User.create({
                 email: req.body.form.email,

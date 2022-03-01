@@ -30,7 +30,8 @@ const userScheme = new Schema({
         required: true
     },
     crontTimeType: {
-        type: String
+        type: String,
+        required: true
     }
 })
 
