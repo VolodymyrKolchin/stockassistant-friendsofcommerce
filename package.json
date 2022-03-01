@@ -21,9 +21,12 @@
   },
   "homepage": "https://github.com/nielsenjared/node-express-heroku-deployment-guide#readme",
   "dependencies": {
+    "@datasert/cronjs-parser": "^1.2.0",
     "body-parser": "^1.19.1",
     "cors": "^2.8.5",
     "cron": "^1.8.2",
+    "cron-parser": "^4.2.1",
+    "cronstrue": "^1.125.0",
     "csv-write-stream": "^2.0.0",
     "dotenv": "^16.0.0",
     "express": "^4.16.2",

@@ -5,22 +5,6 @@ const userScheme = new Schema({
         type: String,
         required: true
     },
-    // daily: {
-    //     type: Boolean,
-    //     required: true
-    // },
-    // workingDay: {
-    //     type: Boolean,
-    //     required: true
-    // },
-    // weekly: {
-    //     type: Boolean,
-    //     required: true
-    // },
-    // monthly: {
-    //     type: Boolean,
-    //     required: true
-    // },
     unsubscribe: {
         type: Boolean,
         required: true
@@ -44,6 +28,9 @@ const userScheme = new Schema({
     clientID: {
         type: String,
         required: true
+    },
+    crontTimeType: {
+        type: String
     }
 })
 

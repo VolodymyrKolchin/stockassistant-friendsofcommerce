@@ -7,14 +7,11 @@ const fs = require('fs');
 const csvWriter = require('csv-write-stream');
 require('dotenv').config();
 const mongoose = require('mongoose');
-const fetch = require('node-fetch');
 const User = require('./schema');
 const transporter = require('./lib/nodemailer');
 const logger = require('./configs/logger');
 const jobDaily = require('./cron/job-daily');
-const workingDay = require('./cron/job-workingDay');
-const weekly = require('./cron/job-weekly');
-const monthly = require('./cron/job-monthly');
+
 const BigCommerce = require('node-bigcommerce');
 const {CronJob} = require("cron");
 
@@ -99,6 +96,7 @@ await User.find({email: req.body.form.email})
                 storeHash: req.body.storeHash,
                 clientID: req.body.clientID,
                 unsubscribe: req.body.form.unsubscribe,
+                crontTimeType: req.body.form.crontTimeType,
             },
             function(err, doc){
                 if(err) {
