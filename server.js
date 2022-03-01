@@ -96,7 +96,7 @@ await User.find({email: req.body.form.email})
                 storeHash: req.body.storeHash,
                 clientID: req.body.clientID,
                 unsubscribe: req.body.form.unsubscribe,
-                crontTimeType: req.body.form.crontTimeType,
+                crontTimeType: req.body.crontTimeType,
             },
             function(err, doc){
                 if(err) {
