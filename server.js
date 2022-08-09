@@ -42,7 +42,6 @@ app.post('/email-list', (req, res) => {
             data.push(response);
         })
         .then(()=>{
-            console.log('data', data)
             res.status(200).send(JSON.stringify({message: data}));
         })
 });
@@ -87,7 +86,6 @@ app.post('/subscribe', cors(),async (req, res) => {
 
 await User.find({email: req.body.form.email})
     .then((data)=>{
-        console.log('req.body', req.body);
         if(data.length === 0) {
             User.create({
                 email: req.body.form.email,
@@ -105,7 +103,7 @@ await User.find({email: req.body.form.email})
                     return logger.info(`Error(Created user): ${err}`);
                 }
                 const job = new CronJob(req.body.cronTime, async function() {
-                    console.log('CronJob!!!: req.body', req.body.form.email);
+                    
                     new BigCommerce({
                         clientId: req.body.clientID,
                         accessToken: req.body.accessToken,
@@ -155,7 +153,6 @@ await User.find({email: req.body.form.email})
                 res.status(201).send("User created");
             });
         } else {
-            console.log('updateOne: req.body.form.email', req.body.form.email)
             User.updateOne({ email: req.body.form.email }, { $set: req.body } )
                 .then((res) => {
                     logger.info(`Update user: ${req.body.form.email}`);
